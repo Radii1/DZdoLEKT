@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int prop = 1;
+	double vvod;
+	do
+	{
+		cout << "Введите число: ";
+		cin >> vvod;
+		cout << endl << "Куб этого числа: " << pow(vvod,3) << endl << "Для выхода из программы введите 0..." << endl;
+		cin >> prop;
+	} while (prop!=0);
+	return 0;
+}
