@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int vvod1, vvod2, vvod3;
+	cout << "Введите число: ";
+	cin >> vvod1;
+	vvod2 = vvod1 + 24;
+	vvod3 = (vvod1 + vvod2) * 2;
+	cout << vvod1 << " " << vvod2 << " " << vvod3;
+	return 0;
+}
