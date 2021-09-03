@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int vvod;
+	cout << "Введите 4хзначное число: ";
+	cin >> vvod;
+	//((vvod / 1000 >= 10) && (vvod / 1000 < 1));
+	for (int i = 1; vvod >= 1; i++)
+	{
+		cout << vvod % 10;
+		vvod = vvod / 10;
+	}
+	return 0;
+}
